@@ -10,7 +10,7 @@ function App() {
 	const [success, setSuccess] = useState(false);
 	const [failed, setFailed] = useState(false);
 
-  function delay(delayMs: number): Promise<void> {
+  function delay(delayMs) {
     return new Promise(resolve => {
       setTimeout(() => resolve(), delayMs);
     });
@@ -27,7 +27,7 @@ function App() {
     <div className="App">
     <Button
 				disabled={isLoading}
-				colorStyle="Primary"
+				colorStyle="Success"
 				id="bruno"
 				type="button"
 				onClick={handle}
